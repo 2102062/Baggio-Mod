@@ -26,6 +26,8 @@ public class ClientEventSubscriber {
             FIRST_BLOCK,
             BAGGIUM_ORE
     };
+
+
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event){
         registerModel(BRUH_ITEM);
