@@ -30,9 +30,12 @@ public class ClientEventSubscriber {
 
     @SubscribeEvent
     public static void registerModels(ModelRegistryEvent event){
-        registerModel(BRUH_ITEM);
-        registerModel(ModItems.BASIC_ITEM);
-        registerModel(Item.getItemFromBlock(ModBlocks.FIRST_BLOCK));
+        for(Item item : items){
+            registerModel(item);
+        }
+        for(Block block : blocks){
+            registerModel(Item.getItemFromBlock(block));
+        }
     }
     public static void registerModel(Item item){
         ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
