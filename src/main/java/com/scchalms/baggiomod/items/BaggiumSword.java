@@ -1,13 +1,12 @@
 package com.scchalms.baggiomod.items;
 
 import com.scchalms.baggiomod.BaggioMod;
-import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemSword;
 
-public class BruhItem extends Item {
-    public static final String id = "bruh_item";
-    public BruhItem(){
+public class BaggiumSword extends ItemSword {
+    public BaggiumSword(ToolMaterial material){
+        super(material);
         setCreativeTab(BaggioMod.BAGGIO_TAB);
-
     }
 }

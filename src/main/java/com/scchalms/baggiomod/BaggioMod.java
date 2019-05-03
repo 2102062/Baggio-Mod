@@ -1,6 +1,7 @@
 package com.scchalms.baggiomod;
 
 import com.scchalms.baggiomod.proxy.IProxy;
+import com.scchalms.baggiomod.tabs.BaggioModTab;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -27,6 +28,8 @@ public class BaggioMod
     public static final String SERVER_PROXY = "com.scchalms.baggiomod.proxy.ServerProxy";
     @SidedProxy(clientSide = BaggioMod.CLIENT_PROXY, serverSide = BaggioMod.SERVER_PROXY)
     public static IProxy proxy;
+
+    public static final CreativeTabs BAGGIO_TAB = new BaggioModTab();
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)

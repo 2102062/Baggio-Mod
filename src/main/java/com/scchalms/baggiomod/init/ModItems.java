@@ -9,4 +9,5 @@ public class ModItems {
     public static final BruhItem BRUH_ITEM = null;
     public static final BasicItem BASIC_ITEM = null;
     public static final Microchip MICROCHIP = null;
+    public static final BaggiumIngot BAGGIUM_INGOT = null;
 }

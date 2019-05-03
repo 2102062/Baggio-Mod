@@ -2,6 +2,9 @@
 item.baggiomod.bruh_item.name=Bruh Moment
 item.baggiomod.basic_item.name=Generic Item
 item.baggiomod.microchip.name=Microchip
+item.baggiomod.baggium_ingot.name=Baggium Ingot
 # Blocks
 tile.baggiomod.first_block.name=Amythest Ore
 tile.baggiomod.baggium_ore.name=Baggium Ore
+# Item Groups
+itemGroup.baggiomod=Baggio Mod

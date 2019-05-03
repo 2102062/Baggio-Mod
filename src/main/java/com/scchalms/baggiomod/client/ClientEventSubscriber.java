@@ -3,6 +3,7 @@ package com.scchalms.baggiomod.client;
 import com.scchalms.baggiomod.BaggioMod;
 import com.scchalms.baggiomod.init.ModBlocks;
 import com.scchalms.baggiomod.init.ModItems;
+import com.scchalms.baggiomod.items.BaggiumIngot;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -20,11 +21,14 @@ public class ClientEventSubscriber {
     public static final Item[] items = {
             BRUH_ITEM,
             BASIC_ITEM,
-            MICROCHIP
+            MICROCHIP,
+            BAGGIUM_INGOT,
+
     };
     public static final Block[] blocks = {
             FIRST_BLOCK,
-            BAGGIUM_ORE
+            BAGGIUM_ORE,
+
     };
 
 
