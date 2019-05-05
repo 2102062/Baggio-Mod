@@ -1,15 +1,15 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "minecraft/baggium_block",
-		"1": "minecraft/baggium_block_partial",
+		"0": "baggiomod:blocks/baggium_block",
+		"1": "baggiomod:blocks/baggium_block_partial",
 		"2": "blocks/glass",
-		"3": "minecraft/baggium_charge_base",
-		"4": "minecraft/baggium_power_input",
-		"5": "minecraft/baggium_charge_base_hot",
-		"6": "minecraft/light_off",
-		"8": "minecraft/light_powered_on",
-		"particle": "minecraft/baggium_block"
+		"3": "baggiomod:blocks/baggium_charge_base",
+		"4": "baggiomod:blocks/baggium_power_input",
+		"5": "baggiomod:blocks/baggium_charge_base_hot",
+		"6": "baggiomod:blocks/light_off",
+		"8": "baggiomod:blocks/light_powered_on",
+		"particle": "baggiomod:blocks/baggium_block"
 	},
 	"elements": [
 		{

@@ -1,5 +1,6 @@
 package com.scchalms.baggiomod;
 
+import com.scchalms.baggiomod.blocks.BaggiumBlock;
 import com.scchalms.baggiomod.blocks.BaggiumOre;
 import com.scchalms.baggiomod.blocks.BlockFirstBlock;
 import com.scchalms.baggiomod.init.ModBlocks;
@@ -18,7 +19,8 @@ public class EventSubscriber {
     public static void registerBlocks(RegistryEvent.Register<Block> event){
         final Block[] blocks = {
                 new BlockFirstBlock().setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
-                new BaggiumOre().setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id)
+                new BaggiumOre().setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
+                new BaggiumBlock().setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id)
         };
         event.getRegistry().registerAll(blocks);
     }
@@ -33,7 +35,8 @@ public class EventSubscriber {
         };
         final Item[] itemBlocks = {
                 new ItemBlock(ModBlocks.FIRST_BLOCK).setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
-                new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id)
+                new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
+                new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id)
         };
         event.getRegistry().registerAll(items);
         event.getRegistry().registerAll(itemBlocks);

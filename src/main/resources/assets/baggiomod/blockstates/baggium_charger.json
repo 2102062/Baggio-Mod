@@ -1,0 +1,10 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "baggiomod:baggium_charger"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}]
+  }
+}

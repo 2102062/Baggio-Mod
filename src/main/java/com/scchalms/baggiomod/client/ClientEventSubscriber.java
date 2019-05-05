@@ -28,7 +28,7 @@ public class ClientEventSubscriber {
     public static final Block[] blocks = {
             FIRST_BLOCK,
             BAGGIUM_ORE,
-
+            BAGGIUM_BLOCK,
     };
 
 
