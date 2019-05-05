@@ -1,7 +1,9 @@
 package com.scchalms.baggiomod;
 
 import com.scchalms.baggiomod.proxy.IProxy;
+import com.scchalms.baggiomod.recipes.ModRecipes;
 import com.scchalms.baggiomod.tabs.BaggioModTab;
+import com.scchalms.baggiomod.world.gen.BaggioWorldGen;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,6 +15,7 @@ import net.minecraftforge.fml.common.SidedProxy;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry;
 import org.apache.logging.log4j.Logger;
 
 @Mod(modid = BaggioMod.MODID, name = BaggioMod.NAME, version = BaggioMod.VERSION, acceptedMinecraftVersions = BaggioMod.MC_VERSION)
@@ -32,24 +35,23 @@ public class BaggioMod
     public static final CreativeTabs BAGGIO_TAB = new BaggioModTab();
 
     @EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
+    public void preInit(FMLPreInitializationEvent event) {
         proxy.preInit(event);
         logger = event.getModLog();
     }
 
     @EventHandler
-    public void init(FMLInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
         proxy.init(event);
-
-        // some example code
         logger.info(BaggioMod.NAME + " is cookin' up!");
+        ModRecipes.initSmelting();
+        GameRegistry.registerWorldGenerator(new BaggioWorldGen(), 0);
     }
 
     @EventHandler
     public void postInit(FMLPostInitializationEvent event) {
         proxy.postInit(event);
+
     }
 
 }

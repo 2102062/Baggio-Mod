@@ -23,7 +23,7 @@ public class ClientEventSubscriber {
             BASIC_ITEM,
             MICROCHIP,
             BAGGIUM_INGOT,
-
+            BAGGIUM_SWORD,
     };
     public static final Block[] blocks = {
             FIRST_BLOCK,

@@ -10,4 +10,5 @@ public class ModItems {
     public static final BasicItem BASIC_ITEM = null;
     public static final Microchip MICROCHIP = null;
     public static final BaggiumIngot BAGGIUM_INGOT = null;
+    public static final BaggiumSword BAGGIUM_SWORD = null;
 }

@@ -3,10 +3,8 @@ package com.scchalms.baggiomod;
 import com.scchalms.baggiomod.blocks.BaggiumOre;
 import com.scchalms.baggiomod.blocks.BlockFirstBlock;
 import com.scchalms.baggiomod.init.ModBlocks;
-import com.scchalms.baggiomod.items.BaggiumIngot;
-import com.scchalms.baggiomod.items.BasicItem;
-import com.scchalms.baggiomod.items.BruhItem;
-import com.scchalms.baggiomod.items.Microchip;
+import com.scchalms.baggiomod.items.*;
+import com.scchalms.baggiomod.material.BaggioMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
@@ -31,6 +29,7 @@ public class EventSubscriber {
                 new BasicItem().setRegistryName(BasicItem.id).setUnlocalizedName(BaggioMod.MODID + "." + BasicItem.id),
                 new Microchip().setRegistryName(Microchip.id).setUnlocalizedName(BaggioMod.MODID + "." + Microchip.id),
                 new BaggiumIngot().setRegistryName(BaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumIngot.id),
+                new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id)
         };
         final Item[] itemBlocks = {
                 new ItemBlock(ModBlocks.FIRST_BLOCK).setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
