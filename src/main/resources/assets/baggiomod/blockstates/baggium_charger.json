@@ -4,7 +4,40 @@
     "model": "baggiomod:baggium_charger"
   },
   "variants": {
-    "normal": [{}],
-    "inventory": [{}]
+    "facing=north": {
+      "model": "baggiomod:baggium_charger"
+    },
+    "facing=east": {
+      "model": "baggiomod:baggium_charger",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "baggiomod:baggium_charger",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "baggiomod:baggium_charger",
+      "y": 270
+    },
+    "normal": [
+      {}
+    ],
+    "inventory": {
+      "elements": [
+        {
+          "model": "baggiomod:baggium_charger",
+          "rotation": {
+            "origin": [
+              8,
+              8,
+              8
+            ],
+            "axis": "x",
+            "angle": 45,
+            "rescale": false
+          }
+        }
+      ]
+    }
   }
 }

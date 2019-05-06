@@ -1,6 +1,7 @@
 package com.scchalms.baggiomod;
 
 import com.scchalms.baggiomod.blocks.BaggiumBlock;
+import com.scchalms.baggiomod.blocks.BaggiumCharger;
 import com.scchalms.baggiomod.blocks.BaggiumOre;
 import com.scchalms.baggiomod.blocks.BlockFirstBlock;
 import com.scchalms.baggiomod.init.ModBlocks;
@@ -9,6 +10,7 @@ import com.scchalms.baggiomod.material.BaggioMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
+import net.minecraft.item.ItemBlockSpecial;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -20,7 +22,8 @@ public class EventSubscriber {
         final Block[] blocks = {
                 new BlockFirstBlock().setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
                 new BaggiumOre().setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
-                new BaggiumBlock().setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id)
+                new BaggiumBlock().setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
+                new BaggiumCharger().setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id)
         };
         event.getRegistry().registerAll(blocks);
     }
@@ -36,7 +39,9 @@ public class EventSubscriber {
         final Item[] itemBlocks = {
                 new ItemBlock(ModBlocks.FIRST_BLOCK).setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
                 new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
-                new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id)
+                new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
+                new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
+
         };
         event.getRegistry().registerAll(items);
         event.getRegistry().registerAll(itemBlocks);

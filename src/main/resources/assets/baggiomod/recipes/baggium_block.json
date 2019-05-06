@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "baggiomod:baggium_ingot"
+    }
+  },
+  "result": {
+    "item": "baggiomod:baggium_block"
+  }
+}
+

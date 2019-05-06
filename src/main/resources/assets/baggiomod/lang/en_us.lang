@@ -7,5 +7,7 @@ item.baggiomod.baggium_sword.name=Baggium Sword
 # Blocks
 tile.baggiomod.first_block.name=Amythest Ore
 tile.baggiomod.baggium_ore.name=Baggium Ore
+tile.baggiomod.baggium_block.name=Baggium Block
+tile.baggiomod.baggium_charger.name=Baggium Charger
 # Item Groups
 itemGroup.baggiomod=Baggio Mod

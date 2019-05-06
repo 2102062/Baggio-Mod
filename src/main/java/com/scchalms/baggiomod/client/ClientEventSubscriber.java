@@ -29,6 +29,7 @@ public class ClientEventSubscriber {
             FIRST_BLOCK,
             BAGGIUM_ORE,
             BAGGIUM_BLOCK,
+            BAGGIUM_CHARGER
     };
 
 
