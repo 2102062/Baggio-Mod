@@ -4,7 +4,11 @@
     "model": "baggiomod:baggium_ore"
   },
   "variants": {
-    "normal": [{}],
-    "inventory": [{}]
+    "normal": [
+      {}
+    ],
+    "inventory": [
+      {}
+    ]
   }
 }

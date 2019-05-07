@@ -4,6 +4,7 @@ import com.scchalms.baggiomod.BaggioMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
+import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
@@ -12,6 +13,11 @@ import net.minecraftforge.energy.IEnergyStorage;
 
 public class BaggiumCharger extends Block implements IEnergyStorage {
     public static final String id = "baggium_charger";
+    protected int energy = 0;
+    protected int capacity = 5000;
+    protected int maxReceive = 100;
+    protected int maxExtract = 100;
+
     public BaggiumCharger(){
         super(Material.IRON);
         setCreativeTab(BaggioMod.BAGGIO_TAB);
@@ -40,31 +46,44 @@ public class BaggiumCharger extends Block implements IEnergyStorage {
     }
     @Override
     public int receiveEnergy(int maxReceive, boolean simulate) {
-        return 0;
+        if (!canReceive())
+            return 0;
+
+        int energyReceived = Math.min(capacity - energy, Math.min(this.maxReceive, maxReceive));
+        if (!simulate)
+            energy += energyReceived;
+        return energyReceived;
     }
 
     @Override
     public int extractEnergy(int maxExtract, boolean simulate) {
-        return 0;
+        if (!canExtract())
+            return 0;
+
+        int energyExtracted = Math.min(energy, Math.min(this.maxExtract, maxExtract));
+        if (!simulate)
+            energy -= energyExtracted;
+        return energyExtracted;
     }
 
     @Override
     public int getEnergyStored() {
-        return 0;
+        return energy;
     }
 
     @Override
     public int getMaxEnergyStored() {
-        return 5000;
+        return capacity;
     }
 
     @Override
     public boolean canExtract() {
-        return true;
+        return this.maxExtract > 0;
     }
 
     @Override
     public boolean canReceive() {
-        return true;
+        return this.maxReceive > 0;
     }
+
 }
