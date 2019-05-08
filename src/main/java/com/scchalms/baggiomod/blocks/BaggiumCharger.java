@@ -28,7 +28,10 @@ public class BaggiumCharger extends Block implements IEnergyStorage {
         setLightOpacity(0);
     }
 
-
+    @Override
+    public boolean isNormalCube(IBlockState state, IBlockAccess world, BlockPos pos) {
+        return false;
+    }
 
     @Override
     public BlockRenderLayer getBlockLayer() {

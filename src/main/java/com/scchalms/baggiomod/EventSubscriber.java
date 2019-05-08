@@ -17,7 +17,6 @@ public class EventSubscriber {
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event){
         final Block[] blocks = {
-                new BlockFirstBlock().setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
                 new BaggiumOre().setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
                 new BaggiumBlock().setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
                 new BaggiumCharger().setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
@@ -29,13 +28,14 @@ public class EventSubscriber {
     public static void registerItems(RegistryEvent.Register<Item> event){
         final Item[] items = {
                 new BruhItem().setRegistryName(BruhItem.id).setUnlocalizedName(BaggioMod.MODID + "." + BruhItem.id),
-                new BasicItem().setRegistryName(BasicItem.id).setUnlocalizedName(BaggioMod.MODID + "." + BasicItem.id),
                 new Microchip().setRegistryName(Microchip.id).setUnlocalizedName(BaggioMod.MODID + "." + Microchip.id),
+                new RainbowMicrochip().setRegistryName(RainbowMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + RainbowMicrochip.id),
                 new BaggiumIngot().setRegistryName(BaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumIngot.id),
-                new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id)
+                new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id),
+                new BaggiumPickaxe(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumPickaxe.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumPickaxe.id),
+
         };
         final Item[] itemBlocks = {
-                new ItemBlock(ModBlocks.FIRST_BLOCK).setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
                 new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
                 new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
                 new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),

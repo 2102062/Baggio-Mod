@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#M#",
+    "# #",
+    "#B#"
+  ],
+  "key": {
+    "M": {
+      "item": "baggiomod:microchip"
+    },
+    "#": {
+      "item": "baggiomod:baggium_ingot"
+    },
+    "B": {
+      "item": "baggiomod:baggium_block"
+    }
+  },
+  "result": {
+    "item": "baggiomod:machine_chassis"
+  }
+}
+

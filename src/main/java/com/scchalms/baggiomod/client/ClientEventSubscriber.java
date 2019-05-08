@@ -20,13 +20,13 @@ import static com.scchalms.baggiomod.init.ModBlocks.*;
 public class ClientEventSubscriber {
     public static final Item[] items = {
             BRUH_ITEM,
-            BASIC_ITEM,
             MICROCHIP,
+            RAINBOW_MICROCHIP,
             BAGGIUM_INGOT,
             BAGGIUM_SWORD,
+            BAGGIUM_PICKAXE,
     };
     public static final Block[] blocks = {
-            FIRST_BLOCK,
             BAGGIUM_ORE,
             BAGGIUM_BLOCK,
             BAGGIUM_CHARGER,
