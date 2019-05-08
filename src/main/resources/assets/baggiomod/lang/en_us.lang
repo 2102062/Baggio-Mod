@@ -9,5 +9,6 @@ tile.baggiomod.first_block.name=Amythest Ore
 tile.baggiomod.baggium_ore.name=Baggium Ore
 tile.baggiomod.baggium_block.name=Baggium Block
 tile.baggiomod.baggium_charger.name=Baggium Charger
+tile.baggiomod.machine_chassis.name=Machine Chassis
 # Item Groups
 itemGroup.baggiomod=Baggio Mod

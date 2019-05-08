@@ -1,9 +1,6 @@
 package com.scchalms.baggiomod;
 
-import com.scchalms.baggiomod.blocks.BaggiumBlock;
-import com.scchalms.baggiomod.blocks.BaggiumCharger;
-import com.scchalms.baggiomod.blocks.BaggiumOre;
-import com.scchalms.baggiomod.blocks.BlockFirstBlock;
+import com.scchalms.baggiomod.blocks.*;
 import com.scchalms.baggiomod.init.ModBlocks;
 import com.scchalms.baggiomod.items.*;
 import com.scchalms.baggiomod.material.BaggioMaterials;
@@ -23,7 +20,8 @@ public class EventSubscriber {
                 new BlockFirstBlock().setRegistryName(BlockFirstBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BlockFirstBlock.id),
                 new BaggiumOre().setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
                 new BaggiumBlock().setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
-                new BaggiumCharger().setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id)
+                new BaggiumCharger().setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
+                new MachineChassis().setRegistryName(MachineChassis.id).setUnlocalizedName(BaggioMod.MODID + "." + MachineChassis.id),
         };
         event.getRegistry().registerAll(blocks);
     }
@@ -41,6 +39,7 @@ public class EventSubscriber {
                 new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
                 new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
                 new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
+                new ItemBlock(ModBlocks.MACHINE_CHASSIS).setRegistryName(MachineChassis.id).setUnlocalizedName(BaggioMod.MODID + "." + MachineChassis.id),
 
         };
         event.getRegistry().registerAll(items);

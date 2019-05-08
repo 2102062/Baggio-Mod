@@ -1,5 +1,6 @@
 {
 	"credit": "Made with Blockbench",
+	"parent": "block/orientable",
 	"textures": {
 		"0": "baggiomod:blocks/baggium_block",
 		"1": "baggiomod:blocks/baggium_block_partial",
