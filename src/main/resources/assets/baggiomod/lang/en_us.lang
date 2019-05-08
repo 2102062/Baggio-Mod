@@ -2,6 +2,8 @@
 item.baggiomod.bruh_item.name=Bruh Moment
 item.baggiomod.basic_item.name=Generic Item
 item.baggiomod.microchip.name=Microchip
+item.baggiomod.enriched_microchip.name=Enriched Microchip
+item.baggiomod.advanced_microchip.name=Advanced Microchip
 item.baggiomod.rainbow_microchip.name=Rainbow-Infused Microchip
 item.baggiomod.baggium_ingot.name=Baggium Ingot
 item.baggiomod.baggium_sword.name=Baggium Sword

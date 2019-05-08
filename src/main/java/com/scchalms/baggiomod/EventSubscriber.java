@@ -29,6 +29,8 @@ public class EventSubscriber {
         final Item[] items = {
                 new BruhItem().setRegistryName(BruhItem.id).setUnlocalizedName(BaggioMod.MODID + "." + BruhItem.id),
                 new Microchip().setRegistryName(Microchip.id).setUnlocalizedName(BaggioMod.MODID + "." + Microchip.id),
+                new EnrichedMicrochip().setRegistryName(EnrichedMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedMicrochip.id),
+                new AdvancedMicrochip().setRegistryName(AdvancedMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + AdvancedMicrochip.id),
                 new RainbowMicrochip().setRegistryName(RainbowMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + RainbowMicrochip.id),
                 new BaggiumIngot().setRegistryName(BaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumIngot.id),
                 new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id),

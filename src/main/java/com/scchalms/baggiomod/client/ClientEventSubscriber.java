@@ -21,6 +21,8 @@ public class ClientEventSubscriber {
     public static final Item[] items = {
             BRUH_ITEM,
             MICROCHIP,
+            ENRICHED_MICROCHIP,
+            ADVANCED_MICROCHIP,
             RAINBOW_MICROCHIP,
             BAGGIUM_INGOT,
             BAGGIUM_SWORD,
