@@ -4,21 +4,23 @@ import com.scchalms.baggiomod.BaggioMod;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.block.state.BlockStateContainer;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.util.BlockRenderLayer;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.IBlockAccess;
+import net.minecraft.world.World;
 import net.minecraftforge.energy.IEnergyStorage;
 
-public class BaggiumCharger extends Block implements IEnergyStorage {
-    public static final String id = "baggium_charger";
+import java.util.Random;
+
+public class PassiveGenerator extends Block implements IEnergyStorage {
+    public static final String id = "passive_generator";
     protected int energy = 0;
-    protected int capacity = 5000;
+    protected int capacity = 2000;
     protected int maxReceive = 100;
     protected int maxExtract = 100;
 
-    public BaggiumCharger(){
+    public PassiveGenerator(){
         super(Material.IRON);
         setCreativeTab(BaggioMod.BAGGIO_TAB);
         setSoundType(SoundType.METAL);
@@ -55,6 +57,11 @@ public class BaggiumCharger extends Block implements IEnergyStorage {
     }
 
     @Override
+    public void updateTick(World worldIn, BlockPos pos, IBlockState state, Random rand) {
+        super.updateTick(worldIn, pos, state, rand);
+    }
+
+    @Override
     public int extractEnergy(int maxExtract, boolean simulate) {
         if (!canExtract())
             return 0;
@@ -84,6 +91,5 @@ public class BaggiumCharger extends Block implements IEnergyStorage {
     public boolean canReceive() {
         return this.maxReceive > 0;
     }
-
 
 }

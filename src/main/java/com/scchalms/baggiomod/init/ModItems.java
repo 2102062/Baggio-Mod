@@ -15,4 +15,7 @@ public class ModItems {
     public static final RainbowMicrochip RAINBOW_MICROCHIP = null;
     public static final EnrichedMicrochip ENRICHED_MICROCHIP = null;
     public static final AdvancedMicrochip ADVANCED_MICROCHIP = null;
+    public static final ChargedBaggiumIngot CHARGED_BAGGIUM_INGOT = null;
+    public static final EnrichedBaggiumIngot ENRICHED_BAGGIUM_INGOT = null;
+    public static final AnshCharm ANSH_CHARM = null;
 }

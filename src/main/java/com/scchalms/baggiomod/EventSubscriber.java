@@ -21,6 +21,9 @@ public class EventSubscriber {
                 new BaggiumBlock().setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
                 new BaggiumCharger().setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
                 new MachineChassis().setRegistryName(MachineChassis.id).setUnlocalizedName(BaggioMod.MODID + "." + MachineChassis.id),
+                new PassiveGenerator().setRegistryName(PassiveGenerator.id).setUnlocalizedName(BaggioMod.MODID + "." + PassiveGenerator.id),
+                new ChargedBaggiumBlock().setRegistryName(ChargedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumBlock.id),
+                new EnrichedBaggiumBlock().setRegistryName(EnrichedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumBlock.id),
         };
         event.getRegistry().registerAll(blocks);
     }
@@ -35,14 +38,18 @@ public class EventSubscriber {
                 new BaggiumIngot().setRegistryName(BaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumIngot.id),
                 new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id),
                 new BaggiumPickaxe(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumPickaxe.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumPickaxe.id),
-
+                new ChargedBaggiumIngot().setRegistryName(ChargedBaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumIngot.id),
+                new EnrichedBaggiumIngot().setRegistryName(EnrichedBaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumIngot.id),
+                new AnshCharm().setRegistryName(AnshCharm.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshCharm.id),
         };
         final Item[] itemBlocks = {
                 new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
                 new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
                 new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
                 new ItemBlock(ModBlocks.MACHINE_CHASSIS).setRegistryName(MachineChassis.id).setUnlocalizedName(BaggioMod.MODID + "." + MachineChassis.id),
-
+                new ItemBlock(ModBlocks.PASSIVE_GENERATOR).setRegistryName(PassiveGenerator.id).setUnlocalizedName(BaggioMod.MODID + "." + PassiveGenerator.id),
+                new ItemBlock(ModBlocks.CHARGED_BAGGIUM_BLOCK).setRegistryName(ChargedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumBlock.id),
+                new ItemBlock(ModBlocks.ENRICHED_BAGGIUM_BLOCK).setRegistryName(EnrichedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumBlock.id),
         };
         event.getRegistry().registerAll(items);
         event.getRegistry().registerAll(itemBlocks);

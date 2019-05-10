@@ -1,6 +1,5 @@
 # Items
 item.baggiomod.bruh_item.name=Bruh Moment
-item.baggiomod.basic_item.name=Generic Item
 item.baggiomod.microchip.name=Microchip
 item.baggiomod.enriched_microchip.name=Enriched Microchip
 item.baggiomod.advanced_microchip.name=Advanced Microchip
@@ -8,11 +7,16 @@ item.baggiomod.rainbow_microchip.name=Rainbow-Infused Microchip
 item.baggiomod.baggium_ingot.name=Baggium Ingot
 item.baggiomod.baggium_sword.name=Baggium Sword
 item.baggiomod.baggium_pickaxe.name=Baggium Pickaxe
+item.baggiomod.charged_baggium_ingot.name=Charged Baggium Ingot
+item.baggiomod.enriched_baggium_ingot.name=Enriched Baggium Ingot
+item.baggiomod.ansh_charm.name=Ansh Charm
 # Blocks
-tile.baggiomod.first_block.name=Amythest Ore
 tile.baggiomod.baggium_ore.name=Baggium Ore
 tile.baggiomod.baggium_block.name=Baggium Block
 tile.baggiomod.baggium_charger.name=Baggium Charger
 tile.baggiomod.machine_chassis.name=Machine Chassis
+tile.baggiomod.passive_generator.name=Passive Generator
+tile.baggiomod.enriched_baggium_block.name=Enriched Baggium Block
+tile.baggiomod.charged_baggium_block.name=Charged Baggium Block
 # Item Groups
 itemGroup.baggiomod=Baggio Mod

@@ -27,12 +27,18 @@ public class ClientEventSubscriber {
             BAGGIUM_INGOT,
             BAGGIUM_SWORD,
             BAGGIUM_PICKAXE,
+            ENRICHED_BAGGIUM_INGOT,
+            CHARGED_BAGGIUM_INGOT,
+            ANSH_CHARM,
     };
     public static final Block[] blocks = {
             BAGGIUM_ORE,
             BAGGIUM_BLOCK,
             BAGGIUM_CHARGER,
-            MACHINE_CHASSIS
+            MACHINE_CHASSIS,
+            PASSIVE_GENERATOR,
+            CHARGED_BAGGIUM_BLOCK,
+            ENRICHED_BAGGIUM_BLOCK,
     };
 
 

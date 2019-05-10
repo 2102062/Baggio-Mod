@@ -9,14 +9,17 @@ Items:
     Baggium Hoe
     Charged Baggium
     Baggium-Infused Diamond
-    Enriched Microchip
-    Advanced Microchip
     Rainbow Ingot
     Charged Rainbow Ingot
     Electric Rainbow Ingot (charged rainbow ingot + rainbow-infused microchip + baggium-infused diamond block)
-    Rainbow-Infused Microchip (rainbow ore + advanced microchip)
+    Rainbow-Infused Microchip (rainbow ingot + advanced microchip)
+    Rainbow TNT
+    Nuclear TNT
+    Jump Pad
 Blocks:
-    Passive Generator
     Enrichment Chamber
     Grinder
     Rainbow Ore
+    Power Bank
+Other:
+    Sky islands
