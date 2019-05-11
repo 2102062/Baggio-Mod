@@ -15,4 +15,5 @@ public class ModBlocks {
     public static final PassiveGenerator PASSIVE_GENERATOR = null;
     public static final ChargedBaggiumBlock CHARGED_BAGGIUM_BLOCK = null;
     public static final EnrichedBaggiumBlock ENRICHED_BAGGIUM_BLOCK = null;
+
 }

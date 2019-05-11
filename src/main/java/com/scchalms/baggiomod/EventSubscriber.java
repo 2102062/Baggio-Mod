@@ -38,9 +38,17 @@ public class EventSubscriber {
                 new BaggiumIngot().setRegistryName(BaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumIngot.id),
                 new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id),
                 new BaggiumPickaxe(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumPickaxe.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumPickaxe.id),
+                new BaggiumShovel(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumShovel.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumShovel.id),
+                new BaggiumAxe(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumAxe.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumAxe.id),
+                new BaggiumHoe(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumHoe.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumHoe.id),
+                new BaggiumHelmet(BaggioMaterials.BAGGIUM_ARMOR).setRegistryName(BaggiumHelmet.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumHelmet.id),
+                new BaggiumChestplate(BaggioMaterials.BAGGIUM_ARMOR).setRegistryName(BaggiumChestplate.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumChestplate.id),
+                new BaggiumLeggings(BaggioMaterials.BAGGIUM_ARMOR).setRegistryName(BaggiumLeggings.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumLeggings.id),
+                new BaggiumBoots(BaggioMaterials.BAGGIUM_ARMOR).setRegistryName(BaggiumBoots.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBoots.id),
                 new ChargedBaggiumIngot().setRegistryName(ChargedBaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumIngot.id),
                 new EnrichedBaggiumIngot().setRegistryName(EnrichedBaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumIngot.id),
                 new AnshCharm().setRegistryName(AnshCharm.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshCharm.id),
+                new AnshShield().setRegistryName(AnshShield.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshShield.id),
         };
         final Item[] itemBlocks = {
                 new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
