@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "baggiomod:items/baggium_axe"
+  }
+}

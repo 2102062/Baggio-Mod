@@ -7,9 +7,18 @@ item.baggiomod.rainbow_microchip.name=Rainbow-Infused Microchip
 item.baggiomod.baggium_ingot.name=Baggium Ingot
 item.baggiomod.baggium_sword.name=Baggium Sword
 item.baggiomod.baggium_pickaxe.name=Baggium Pickaxe
+item.baggiomod.baggium_axe.name=Baggium Axe
+item.baggiomod.baggium_hoe.name=Baggium Hoe
+item.baggiomod.baggium_shovel.name=Baggium Shovel
+item.baggiomod.baggium_helmet.name=Baggium Helmet
+item.baggiomod.baggium_chestplate.name=Baggium Chestplate
+item.baggiomod.baggium_leggings.name=Baggium Leggings
+item.baggiomod.baggium_boots.name=Baggium Boots
 item.baggiomod.charged_baggium_ingot.name=Charged Baggium Ingot
 item.baggiomod.enriched_baggium_ingot.name=Enriched Baggium Ingot
 item.baggiomod.ansh_charm.name=Ansh Charm
+item.baggiomod.ansh_shield.name=Ansh Shield
+
 # Blocks
 tile.baggiomod.baggium_ore.name=Baggium Ore
 tile.baggiomod.baggium_block.name=Baggium Block
