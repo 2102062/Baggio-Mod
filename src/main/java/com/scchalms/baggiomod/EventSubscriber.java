@@ -7,7 +7,6 @@ import com.scchalms.baggiomod.material.BaggioMaterials;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemBlock;
-import net.minecraft.item.ItemBlockSpecial;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
@@ -35,7 +34,10 @@ public class EventSubscriber {
                 new EnrichedMicrochip().setRegistryName(EnrichedMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedMicrochip.id),
                 new AdvancedMicrochip().setRegistryName(AdvancedMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + AdvancedMicrochip.id),
                 new RainbowMicrochip().setRegistryName(RainbowMicrochip.id).setUnlocalizedName(BaggioMod.MODID + "." + RainbowMicrochip.id),
+                new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
                 new BaggiumIngot().setRegistryName(BaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumIngot.id),
+                new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
+                new BaggiumNugget().setRegistryName(BaggiumNugget.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumNugget.id),
                 new BaggiumSword(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumSword.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumSword.id),
                 new BaggiumPickaxe(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumPickaxe.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumPickaxe.id),
                 new BaggiumShovel(BaggioMaterials.BAGGIUM_TOOL).setRegistryName(BaggiumShovel.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumShovel.id),
@@ -46,20 +48,16 @@ public class EventSubscriber {
                 new BaggiumLeggings(BaggioMaterials.BAGGIUM_ARMOR).setRegistryName(BaggiumLeggings.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumLeggings.id),
                 new BaggiumBoots(BaggioMaterials.BAGGIUM_ARMOR).setRegistryName(BaggiumBoots.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBoots.id),
                 new ChargedBaggiumIngot().setRegistryName(ChargedBaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumIngot.id),
+                new ItemBlock(ModBlocks.CHARGED_BAGGIUM_BLOCK).setRegistryName(ChargedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumBlock.id),
                 new EnrichedBaggiumIngot().setRegistryName(EnrichedBaggiumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumIngot.id),
+                new ItemBlock(ModBlocks.ENRICHED_BAGGIUM_BLOCK).setRegistryName(EnrichedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumBlock.id),
                 new AnshCharm().setRegistryName(AnshCharm.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshCharm.id),
                 new AnshShield().setRegistryName(AnshShield.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshShield.id),
-        };
-        final Item[] itemBlocks = {
-                new ItemBlock(ModBlocks.BAGGIUM_ORE).setRegistryName(BaggiumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumOre.id),
-                new ItemBlock(ModBlocks.BAGGIUM_BLOCK).setRegistryName(BaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumBlock.id),
-                new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
+
                 new ItemBlock(ModBlocks.MACHINE_CHASSIS).setRegistryName(MachineChassis.id).setUnlocalizedName(BaggioMod.MODID + "." + MachineChassis.id),
+                new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
                 new ItemBlock(ModBlocks.PASSIVE_GENERATOR).setRegistryName(PassiveGenerator.id).setUnlocalizedName(BaggioMod.MODID + "." + PassiveGenerator.id),
-                new ItemBlock(ModBlocks.CHARGED_BAGGIUM_BLOCK).setRegistryName(ChargedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumBlock.id),
-                new ItemBlock(ModBlocks.ENRICHED_BAGGIUM_BLOCK).setRegistryName(EnrichedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumBlock.id),
         };
         event.getRegistry().registerAll(items);
-        event.getRegistry().registerAll(itemBlocks);
     }
 }

@@ -1,7 +1,6 @@
 package com.scchalms.baggiomod.init;
 
 import com.scchalms.baggiomod.BaggioMod;
-import com.scchalms.baggiomod.blocks.BaggiumBlock;
 import com.scchalms.baggiomod.items.*;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
@@ -27,5 +26,5 @@ public class ModItems {
     public static final EnrichedBaggiumIngot ENRICHED_BAGGIUM_INGOT = null;
     public static final AnshCharm ANSH_CHARM = null;
     public static final AnshShield ANSH_SHIELD = null;
-
+    public static final BaggiumNugget BAGGIUM_NUGGET = null;
 }

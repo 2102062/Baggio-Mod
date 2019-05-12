@@ -1,9 +1,6 @@
 package com.scchalms.baggiomod.client;
 
 import com.scchalms.baggiomod.BaggioMod;
-import com.scchalms.baggiomod.init.ModBlocks;
-import com.scchalms.baggiomod.init.ModItems;
-import com.scchalms.baggiomod.items.BaggiumIngot;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.Item;
@@ -13,8 +10,8 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.relauncher.Side;
 
-import static com.scchalms.baggiomod.init.ModItems.*;
 import static com.scchalms.baggiomod.init.ModBlocks.*;
+import static com.scchalms.baggiomod.init.ModItems.*;
 
 @Mod.EventBusSubscriber(modid = BaggioMod.MODID, value = Side.CLIENT)
 public class ClientEventSubscriber {
@@ -25,6 +22,7 @@ public class ClientEventSubscriber {
             ADVANCED_MICROCHIP,
             RAINBOW_MICROCHIP,
             BAGGIUM_INGOT,
+            BAGGIUM_NUGGET,
             BAGGIUM_SWORD,
             BAGGIUM_PICKAXE,
             BAGGIUM_SHOVEL,

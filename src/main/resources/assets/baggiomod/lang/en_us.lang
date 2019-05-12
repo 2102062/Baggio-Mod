@@ -18,7 +18,7 @@ item.baggiomod.charged_baggium_ingot.name=Charged Baggium Ingot
 item.baggiomod.enriched_baggium_ingot.name=Enriched Baggium Ingot
 item.baggiomod.ansh_charm.name=Ansh Charm
 item.baggiomod.ansh_shield.name=Ansh Shield
-
+item.baggiomod.baggium_nugget.name=Baggium Nugget
 # Blocks
 tile.baggiomod.baggium_ore.name=Baggium Ore
 tile.baggiomod.baggium_block.name=Baggium Block
