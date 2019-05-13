@@ -19,6 +19,7 @@ item.baggiomod.enriched_baggium_ingot.name=Enriched Baggium Ingot
 item.baggiomod.ansh_charm.name=Ansh Charm
 item.baggiomod.ansh_shield.name=Ansh Shield
 item.baggiomod.baggium_nugget.name=Baggium Nugget
+item.baggiomod.colorium_ingot.name=Colorium Ingot
 # Blocks
 tile.baggiomod.baggium_ore.name=Baggium Ore
 tile.baggiomod.baggium_block.name=Baggium Block
@@ -27,5 +28,6 @@ tile.baggiomod.machine_chassis.name=Machine Chassis
 tile.baggiomod.passive_generator.name=Passive Generator
 tile.baggiomod.enriched_baggium_block.name=Enriched Baggium Block
 tile.baggiomod.charged_baggium_block.name=Charged Baggium Block
+tile.baggiomod.colorium_ore.name=Colorium Ore
 # Item Groups
 itemGroup.baggiomod=Baggio Mod

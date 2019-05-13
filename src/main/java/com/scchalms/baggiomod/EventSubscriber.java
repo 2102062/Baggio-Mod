@@ -23,6 +23,7 @@ public class EventSubscriber {
                 new PassiveGenerator().setRegistryName(PassiveGenerator.id).setUnlocalizedName(BaggioMod.MODID + "." + PassiveGenerator.id),
                 new ChargedBaggiumBlock().setRegistryName(ChargedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + ChargedBaggiumBlock.id),
                 new EnrichedBaggiumBlock().setRegistryName(EnrichedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumBlock.id),
+                new ColoriumOre().setRegistryName(ColoriumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + ColoriumOre.id),
         };
         event.getRegistry().registerAll(blocks);
     }
@@ -53,7 +54,8 @@ public class EventSubscriber {
                 new ItemBlock(ModBlocks.ENRICHED_BAGGIUM_BLOCK).setRegistryName(EnrichedBaggiumBlock.id).setUnlocalizedName(BaggioMod.MODID + "." + EnrichedBaggiumBlock.id),
                 new AnshCharm().setRegistryName(AnshCharm.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshCharm.id),
                 new AnshShield().setRegistryName(AnshShield.id).setUnlocalizedName(BaggioMod.MODID + "." + AnshShield.id),
-
+                new ColoriumIngot().setRegistryName(ColoriumIngot.id).setUnlocalizedName(BaggioMod.MODID + "." + ColoriumIngot.id),
+                new ItemBlock(ModBlocks.COLORIUM_ORE).setRegistryName(ColoriumOre.id).setUnlocalizedName(BaggioMod.MODID + "." + ColoriumOre.id),
                 new ItemBlock(ModBlocks.MACHINE_CHASSIS).setRegistryName(MachineChassis.id).setUnlocalizedName(BaggioMod.MODID + "." + MachineChassis.id),
                 new ItemBlock(ModBlocks.BAGGIUM_CHARGER).setRegistryName(BaggiumCharger.id).setUnlocalizedName(BaggioMod.MODID + "." + BaggiumCharger.id),
                 new ItemBlock(ModBlocks.PASSIVE_GENERATOR).setRegistryName(PassiveGenerator.id).setUnlocalizedName(BaggioMod.MODID + "." + PassiveGenerator.id),

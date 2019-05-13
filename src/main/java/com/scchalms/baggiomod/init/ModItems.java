@@ -27,4 +27,5 @@ public class ModItems {
     public static final AnshCharm ANSH_CHARM = null;
     public static final AnshShield ANSH_SHIELD = null;
     public static final BaggiumNugget BAGGIUM_NUGGET = null;
+    public static final ColoriumIngot COLORIUM_INGOT = null;
 }

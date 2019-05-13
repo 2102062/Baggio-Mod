@@ -36,6 +36,7 @@ public class ClientEventSubscriber {
             CHARGED_BAGGIUM_INGOT,
             ANSH_CHARM,
             ANSH_SHIELD,
+            COLORIUM_INGOT,
     };
     public static final Block[] blocks = {
             BAGGIUM_ORE,
@@ -45,6 +46,7 @@ public class ClientEventSubscriber {
             PASSIVE_GENERATOR,
             CHARGED_BAGGIUM_BLOCK,
             ENRICHED_BAGGIUM_BLOCK,
+            COLORIUM_ORE,
     };
 
 
